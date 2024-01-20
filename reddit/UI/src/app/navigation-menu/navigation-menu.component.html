@@ -1,0 +1,20 @@
+<div class="div1">
+    <h1 class="h11">REDDIT</h1>
+
+
+    <button class="button1" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/login" *ngIf="navsrv.LoginStatus">Log In</a></button>
+    <button class="button1" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/register" *ngIf="navsrv.LoginStatus">Register</a></button>
+    <button class="button1" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/logout" *ngIf="!navsrv.LoginStatus">Log Out</a></button>
+    <button class="button2" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/profile" *ngIf="!navsrv.LoginStatus">My Profile</a></button>
+    <button class="button2" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/my-posts" *ngIf="!navsrv.LoginStatus">My Posts</a></button>
+    <button class="button2" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/interests" *ngIf="!navsrv.LoginStatus">Interests</a></button>
+    <button class="button2" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}><a class="a_link" routerLink="/home">Home</a></button>
+
+</div>
+
+
+
+
+
+
+

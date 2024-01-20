@@ -1,0 +1,49 @@
+<div class="div1">
+
+    <h1 class="h21">Your Profile</h1>
+    <div class="line1"></div>
+    
+    <form [formGroup]="form" (ngSubmit)="sendChangeData()">
+        <table class="table-pom col-12">
+            <tr class="col-6">
+                <th><label class="h31">First Name:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.firstName" type="text" formControlName="firstName"></td>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Second Name:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.lastName"   type="text" formControlName="lastName"></td>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Adress:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.address"  type="text" formControlName="address"></td>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Country:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.country"  type="text" formControlName="country"></td>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Username:</label></th>
+                <th><input required class="form-control form-control-pom" [(ngModel)]="user.username" type="text" formControlName="username"></th>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Phone Number:</label></th>
+                <th><input required class="form-control form-control-pom" [(ngModel)]="user.phoneNumber" type="text" formControlName="phoneNumber"></th>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Email:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.email" type="email" formControlName="email"></td>
+            </tr>
+            <tr class="col-6">
+                <th><label class="h31">Password:</label></th>
+                <td><input required class="form-control form-control-pom" [(ngModel)]="user.password" type="password" formControlName="password"></td>
+            </tr>
+            <tr class="col-6">
+                <td><button type="submit" class="button1 button1-pom">Submit</button></td>
+                <td><button type="reset" class="button1 button1-pom2">Clear</button></td>
+                <td><button class="button1 button1-pom3" routerLinkActive="active" ><a class="a_link" routerLink="/profile">Back</a></button></td>
+                </tr>
+        </table>
+    
+    </form>
+    <div class="line2"></div>
+</div>

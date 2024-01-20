@@ -1,0 +1,90 @@
+.newCommentTable{
+
+    margin-left: 400px;
+    width: 700px;
+    height: 100px;
+    background-color: SteelBlue;
+    color: gold;
+
+    border-radius: 20px;
+    border-style: solid;
+    border-color: Silver;
+
+}
+
+.th-post-table{
+    text-align: center;
+
+
+}
+.description-pom{
+   display:flex;
+   justify-content: center;
+
+}
+
+.author{
+    text-align: left;
+    float: left;
+    width: auto;
+
+}
+.input2{
+    width: 600px;
+    height: 100px;
+    border-radius:20px;
+}
+
+.button11{
+    background-color: SteelBlue;
+    border-style: solid;
+    border-color: Silver;
+    color: gold;
+    border-radius: 20px;
+}
+.button11:hover{
+    background-color: Silver;
+
+    color: SteelBlue;
+
+}
+.posts{
+    list-style: none;
+
+}
+.comment-pom{
+     padding-left: 9px;
+}
+
+.list{
+    margin-top: 10px;
+}
+.post_table{
+    background-color: SteelBlue;
+    color: Silver;
+    width:700px;
+    margin-left: 400px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.butImg{
+    width: 20px;
+    height: 20px;
+}
+.butImg:hover{
+    border-style: solid;
+    border-color: SteelBlue;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }

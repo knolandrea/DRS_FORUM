@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="sendPostData()">
+    <table class="newPostTable">
+        <tr><th class="th-post-table"  colspan="2">NEW POST</th></tr>
+        <tr><td>Title:</td><td><input class="input1" formControlName="title"></td></tr>
+        <tr><td colspan="2">Content:</td></tr>
+        <tr><td colspan="2"><textarea class="input2" formControlName="description"></textarea></td></tr>
+        <tr><td colspan="2" class="th-post-table" ><input class="button11" type="submit"></td></tr>
+    </table>
+</form>

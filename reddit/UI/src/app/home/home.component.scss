@@ -1,0 +1,131 @@
+.buttonADD{
+    color: Silver;
+    background-color: SteelBlue;
+    margin-left: 720px;
+}
+.buttonADD:hover{
+    color: SteelBlue;
+    background-color: Silver;
+}
+
+.post_table{
+    background-color: SteelBlue;
+    color: Silver;
+    width:500px;
+    margin-left: 400px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.spacing_1{
+    height: 50px;
+}
+.posts{
+    list-style: none;
+
+}
+
+.list{
+    margin-top: 10px;
+}
+
+.author{
+    text-align: left;
+    float: left;
+    width: auto;
+
+}
+
+.butImg{
+    width: 20px;
+    height: 20px;
+}
+.butImg:hover{
+    border-style: solid;
+    border-color: SteelBlue;
+}
+
+.desc{
+    width: 700px;
+    height: auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.sortTable{
+
+    margin-left: 530px;
+    width: 500px;
+    height: 100px;
+    background-color: SteelBlue;
+
+
+
+    border-style: solid;
+    border-color: Silver;
+
+}
+
+.th-post-table{
+    text-align: center;
+    color: Silver;
+
+
+}
+.input1{
+    width:120px;
+    text-align: center;
+    margin-left: 20px;
+    border-radius:20px;
+    background-color:SteelBlue;
+    color: Silver;
+
+}
+
+.input1:hover{
+    border-style: solid;
+    border-color: Silver;
+}
+.input2{
+    width: 120px;
+
+    margin-left: 20px;
+    text-align: center;
+    border-radius:20px;
+    background-color: Silver;
+    color: white;
+
+}
+
+.inputSearch{
+    width: 500px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+
+.searchTable{
+    margin-left: 480px;
+    width: 600px;
+    height: 100px;
+    background-color: SteelBlue;
+
+
+
+    border-style: solid;
+    border-color: Silver;
+}
+
+.searchButton{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.searchButton:hover{
+    border-style: solid;
+    border-color: Silver;
+    background-color: Silver;
+    border-radius: 20px;
+}

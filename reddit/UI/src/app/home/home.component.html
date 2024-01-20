@@ -1,0 +1,36 @@
+
+<button *ngIf="loggedIn" class="buttonADD"  (click)="ShowAddPost()">Add new post</button>
+
+<table class="sortTable">
+  <tr><th class="th-post-table"  colspan="3">SORT BY:</th></tr>
+  <tr><td><input *ngIf="!sortUp" type="button" class="input1" value="UpVotes" (click)="sortUpvotes()"><input *ngIf="sortUp" type="button" class="input2" value="UpVotes" (click)="sortUpvotes()"></td>
+  <td><input type="button" *ngIf="!sortDown" class="input1" value="DownVotes" (click)="sortDownvotes()"><input type="button" *ngIf="sortDown" class="input2" value="DownVotes" (click)="sortDownvotes()"></td>
+  <td><input type="button" *ngIf="!sortComm" class="input1" value="Comments" (click)="sortComments()"><input type="button" *ngIf="sortComm" class="input2" value="Comments" (click)="sortComments()"></td>
+  </tr>
+</table>
+
+<form [formGroup]="searchform" (ngSubmit)="searchPosts()">
+  <table class="searchTable">
+
+    <tr><td><input type="text" placeholder="SEARCH" formControlName="searchField" class="inputSearch"></td><td><input type="image" src="../../assets/searchbutton.png" class="searchButton" ></td></tr>
+  </table>
+</form>
+
+
+<app-add-post *ngIf="show"></app-add-post>
+
+<ul class="posts">
+    <li class="list" *ngFor="let post of posts">
+      <table class="post_table">
+        <tr><td colspan="3" class="author">@{{post.user}}</td></tr>
+        <tr><th colspan="3">{{post.title}}</th></tr>
+        <tr><td class="spacing_1"></td></tr>
+        <tr><td  colspan="3" class="author"><p class="desc">{{post.description}}</p></td></tr>
+        <tr><td  class="author"><input *ngIf="!post.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="likePost(post.id);"><input style="border-style:solid; border-color:gold; border-radius:1px;" *ngIf="post.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="unlikePost(post.id);"></td><td class="author" >{{post.likes-post.dislikes}} </td>
+          <td  class="author"><input *ngIf="!post.disliked" class="butImg" type="image" src="../../assets/dislikebutton.png" (click)="dislikePost(post.id);"><input class="butImg" *ngIf="post.disliked" style="border-style:solid; border-color:gold; border-radius:1px;" type="image" src="../../assets/dislikebutton.png" (click)="undislikePost(post.id);"></td>
+          <td  class="author" ><input class="butImg" type="image"  src="../../assets/comment.png" (click)="ShowAddComment(post.id)" ></td><td class="author">{{post.commentsNumber}}</td>
+          </tr>
+      </table>
+      <app-comment [post]="post" [user]="msg" [loggedIn]="loggedIn" *ngIf="post.showComment"></app-comment>
+    </li>
+  </ul>

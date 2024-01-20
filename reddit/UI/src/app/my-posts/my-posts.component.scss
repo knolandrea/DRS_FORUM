@@ -1,0 +1,70 @@
+.buttonADD{
+    color: Silver;
+    background-color: SteelBlue;
+    margin-left: 720px;
+}
+.buttonADD:hover{
+    color: SteelBlue;
+    background-color: Silver;
+}
+.post_table{
+    background-color: SteelBlue;
+    color: Silver;
+    width:700px;
+    margin-left: 400px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.spacing_1{
+    height: 50px;
+}
+.posts{
+    list-style: none;
+
+
+}
+
+.list{
+    margin-top: 10px;
+}
+
+.author{
+    text-align: left;
+    float: left;
+    width: auto;
+
+}
+
+.butImg{
+    width: 20px;
+    height: 20px;
+}
+.butTxt{
+    width: 150px;
+    height: 30px;
+    background-color: SteelBlue;
+    color: Silver;
+}
+
+
+.butTxt:hover{
+    width: 150px;
+    height: 30px;
+    background-color: Silver;
+    color: white;
+}
+
+
+
+.butImg:hover{
+    border-style: solid;
+    border-color: SteelBlue;
+}
+
+.desc{
+    width: 700px;
+    height: auto;
+    word-wrap: break-word;
+    text-align: center;
+}

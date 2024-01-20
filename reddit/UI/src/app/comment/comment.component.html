@@ -1,0 +1,21 @@
+<ul class="posts comment-pom">
+         <li class="list" *ngFor="let comment of comments">
+          <table class="post_table">
+            <tr><td colspan="3" class="author">@{{comment.user}}</td></tr>
+            <tr><td class="spacing_1"></td></tr>
+            <tr><td  colspan="3">{{comment.desc}}</td></tr>
+          <tr><td  class="author"><input *ngIf="!comment.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="likeComment(comment.id);">
+                                    <input style="border-style:solid; border-color:gold; border-radius:1px;" *ngIf="comment.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="unlikeComment(comment.id);"></td><td class="author" >{{comment.likes-comment.dislikes}} </td>
+                <td  class="author"><input *ngIf="!comment.disliked" class="butImg" type="image" src="../../assets/dislikebutton.png" (click)="dislikeComment(comment.id);">
+                                    <input class="butImg" *ngIf="comment.disliked" style="border-style:solid; border-color:gold; border-radius:1px;" type="image" src="../../assets/dislikebutton.png" (click)="undislikeComment(comment.id);"></td>
+            </table> 
+    </li>
+  </ul>
+
+<form class="comment-pom" *ngIf="post.isClosed==0 && loggedIn" [formGroup]="form" (ngSubmit)="sendCommentData()">
+        <table class="newCommentTable col-xl-12">
+            <tr><th class="th-post-table col-xl-12"  colspan="2">NEW COMMENT</th></tr>
+            <tr><td class="col-xl-12 description-pom" colspan="2"><textarea placeholder="Write comment" class="input2" formControlName="description"></textarea></td></tr>
+            <tr><td colspan="2" class="th-post-table" ><input class="button11" type="submit"></td></tr>
+        </table>
+</form>

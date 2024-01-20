@@ -1,0 +1,22 @@
+<button class="buttonADD" (click)="ShowAddPost()">Add new post</button>
+
+<app-add-post *ngIf="show"></app-add-post>
+
+<ul class="posts">
+    <li class="list" *ngFor="let post of posts">
+      <table class="post_table" *ngIf="post.isDeleted==0">
+        <tr><td colspan="3" class="author">@{{post.user}}</td></tr>
+        <tr><th colspan="3">{{post.title}}</th></tr>
+        <tr><td class="spacing_1"></td></tr>
+        <tr><td  colspan="3"><p class="desc">{{post.description}}</p></td></tr>
+        <tr><td  class="author"><input *ngIf="!post.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="likePost(post.id);"><input style="border-style:solid; border-color:gold; border-radius:1px;" *ngIf="post.liked" class="butImg" type="image" src="../../assets/likebutton.png" (click)="unlikePost(post.id);"></td><td class="author" >{{post.likes-post.dislikes}} </td>
+          <td  class="author"><input *ngIf="!post.disliked" class="butImg" type="image" src="../../assets/dislikebutton.png" (click)="dislikePost(post.id);"><input class="butImg" *ngIf="post.disliked" style="border-style:solid; border-color:gold; border-radius:1px;" type="image" src="../../assets/dislikebutton.png" (click)="undislikePost(post.id);"></td>
+
+          <td class="author" style="width: 20px;"><input *ngIf="post.isClosed==0" class="butImg" type="image"  src="../../assets/comment.png" (click)="ShowAddComment(post.id)" ></td>
+          <td class="author"><input class="butTxt" type="button" value="Disable Comment"  (click)="DisableComments(post.id)"><input class="butTxt" *ngIf="post.isClosed!=0" type="button" value="Enable comment"  (click)="DisableComments(post.id)"></td>
+          <td class="author" style="width: 20px;"><input  class="butImg" type="image"  src="../../assets/delete.png" (click)="deletePost(post.id)" ></td></tr>
+
+      </table>
+      <app-comment [post]="post" [user]="msg" *ngIf="post.showComment"></app-comment>
+    </li>
+  </ul>

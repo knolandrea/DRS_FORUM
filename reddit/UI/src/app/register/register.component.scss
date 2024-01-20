@@ -1,0 +1,81 @@
+.div1{
+    margin: auto;
+    margin-top: 50px;
+    width: 650px;
+    height:550px;
+    background-color: SteelBlue;;
+
+    border-radius: 50% / 10%;
+
+}
+
+.div1::before{
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+}
+
+.h21{
+    text-align: center;
+    color: Silver;
+}
+.line1{
+    width:600px;
+    height: 4px;
+    background-color: Silver;
+    margin-left: 20px;
+
+}
+.line2{
+    width:600px;
+    height: 4px;
+    background-color: SilverS;
+    margin-left: 20px;
+    margin-top: 80px;
+
+}
+.h31{
+    color: white;
+    margin-left: 40px;
+    margin-top: 30px;
+    float: left;
+    clear: both;
+    text-align: right;
+}
+.input1{
+    float: right;
+    margin-top: 30px;
+    text-align: left;
+    margin-right: 60px;
+    background-color: white;
+    border-radius: 1px;
+    border-color: white;
+    color: Silver;
+}
+.button1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: SteelBlue;
+    border-radius: 5px;
+    border-color: white;
+    color: Silver;
+}
+.button1-pom{
+    margin-right: 5px;
+}
+.button1-pom2{
+    margin-left: 5px;
+}
+.table-pom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

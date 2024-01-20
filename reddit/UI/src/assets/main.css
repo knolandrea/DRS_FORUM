@@ -1,0 +1,33 @@
+.button1{
+    background: SteelBlue;
+    color:Silver;
+    text-decoration:none;
+}
+
+.button1:hover{
+    background:Silver;
+    color:SteelBlue;
+    text-decoration:none;
+}
+.button2{
+    background: SteelBlue;
+    color:Silver;
+    text-decoration:none;
+}
+
+.button2:hover{
+    background:Silver;
+    color:SteelBlue;
+    text-decoration:none;
+}
+
+.a_link{
+    text-decoration: none;
+    color:Silver
+}
+.a_link:hover{
+    text-decoration: none;
+    color:SteelBlue;
+    background-color: Silver;
+
+}
